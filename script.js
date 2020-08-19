@@ -6,9 +6,11 @@ $(document).ready(function () {
   function calTimeClass(hour) {
     if (hour === moment().hours()) {
       return "present";
-    } else if (hour > moment().hours());{
+    } else if (hour > moment().hours()) {
       return "future";
-    } 
+    } else if (hour < moment().hours()) {
+      return "past";
+    }
   }
 
   setInterval(showDate, 1000);
