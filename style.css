@@ -1,12 +1,19 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  background:  #FFE5BB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45.34deg, #119DA4 5.66%, #9BC7B2 31.53%, #FFE5BB 50.01%, #FFBE99 72.18%, #FF886A 94.35%);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-textarea{
+textarea {
   background: transparent;
   border: none;
+
   resize: none;
   color: #000000;
   border-left: 1px solid black;
@@ -21,11 +28,11 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
@@ -33,41 +40,102 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: white;
+  background: #ec38bc;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  background: -webkit-linear-gradient(
+    45.34deg,
+    #355c7d 5.66%,
+    #6c5b7b 49.09%,
+    #c06c84 93.43%
+  );
+
+  background: linear-gradient(
+    45.34deg,
+    #355c7d 5.66%,
+    #6c5b7b 49.09%,
+    #c06c84 93.43%
+  );
+  border-top-left-radius: 15px;
 }
 
 .past {
-  background-color: #d3d3d3;
+  background: #43c6ac;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(45deg, #191654, #43c6ac);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(45deg, #191654, #43c6ac);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background: #ffe5bb;
+
+  background: -webkit-linear-gradient(
+    45.34deg,
+    #119da4 5.66%,
+    #9bc7b2 31.53%,
+    #ffe5bb 50.01%,
+    #ffbe99 72.18%,
+    #ff886a 94.35%
+  );
+
+  background: linear-gradient(
+    45.34deg,
+    #119da4 5.66%,
+    #9bc7b2 31.53%,
+    #ffe5bb 50.01%,
+    #ffbe99 72.18%,
+    #ff886a 94.35%
+  );
+
   color: white;
+  ;
 }
 
 .future {
-  background-color: #77dd77;
+  background: #34e89e;
+
+  background: -webkit-linear-gradient(45deg, #0f3443, #34e89e);
+
+  background: linear-gradient(45deg, #0f3443, #34e89e);
+
   color: white;
+  ;
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
-  color: white;
+
+  background: #ec38bc;
+
+  background: -webkit-linear-gradient(
+    45.34deg,
+    #355c7d 5.66%,
+    #6c5b7b 49.09%,
+    #c06c84 93.43%
+  );
+
+  background: linear-gradient(
+    45.34deg,
+    #355c7d 5.66%,
+    #6c5b7b 49.09%,
+    #c06c84 93.43%
+  );
 }
 
 .saveBtn i:hover {
   font-size: 30px;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .fas {

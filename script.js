@@ -10,8 +10,9 @@ $(document).ready(function () {
       return "future";
     } else if (hour < moment().hours()) {
       return "past";
+    } 
+    $(this).prop("disabled", true)
     }
-  }
 
   setInterval(showDate, 1000);
   showDate();
